@@ -11,5 +11,6 @@ async def on_ready():
 
 TOKEN = '봇토큰을 입력하세요.'
 
-# 봇 실행
+
 client.run(TOKEN)
+
