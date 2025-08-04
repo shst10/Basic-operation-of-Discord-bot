@@ -1,0 +1,15 @@
+import discord
+
+
+intents = discord.Intents.default()
+client = discord.Client(intents=intents)
+
+@client.event
+async def on_ready():
+    print(f'봇이 로그인되었습니다.: {client.user}')
+
+
+TOKEN = '봇토큰을 입력하세요.'
+
+# 봇 실행
+client.run(TOKEN)
